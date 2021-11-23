@@ -1,0 +1,24 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body"> 
+
+        <h5 class="card-title">{{message_when_notEmpty}}</h5>
+        <!-- <h5 class="card-title">{{message_when_empty}}</h5> -->
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>TargetDate</th>
+                </tr>
+            </thead>
+
+            <tbody *ngIf="tasks">
+                <tr *ngFor="let task of tasks ; index as idx">
+                    <td>{{task.desc}}</td>
+                    <td>{{task.targetDate}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

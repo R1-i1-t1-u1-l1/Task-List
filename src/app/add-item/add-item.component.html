@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-md-8">
+            <br>
+            <div class="alert alert-warning" *ngIf="error">
+                <strong>{{err_msg}}</strong>
+            </div>
+            <form>
+                <fieldset>
+                    <label>Description</label>
+                    <input type="text" [(ngModel)]="new_task_desc" class="form-control" name="new_task_desc"
+                        required="required">
+                </fieldset>
+        
+                <fieldset>
+                    <label>Targetdate</label>
+                    <input type="date" [(ngModel)]="new_task_target_date" class="form-control" name="new_task_target_date"
+                        required="required">
+                </fieldset>
+                <br>
+                <button type="button" class="btn btn-success" (click)="SaveItem()">Add</button>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <br>
+            <app-sidebar></app-sidebar>
+        </div>
+    </div>
+
+    
+</div>
