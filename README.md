@@ -4,7 +4,7 @@
 The project contains four components named todolist , add-item , update-item and sidebar and one service named get-data-from-local-storage.
 
 ### Interface
-There is .ts file named TodoClass which is an interface with feilds desc and targetDate.
+There is .ts file named TodoClass which is an interface with fields desc and targetDate.
 
 ### Service
 get-data-from-local-storage is a service that contains a method getData to fetch the data from the local storage.
@@ -18,7 +18,7 @@ Data is stored in the local storage in the form of 'ItemList' : [{desc : string 
    
    b) todolist.component.ts contains methods addItem :- This function helps in navigating to add-item component, 
                                              deleteItem :- This function is responsible for deleting the item from tasklist,
-                                             updateItem :- This function is responsible for updating the item from tasklist,
+                                             updateItem :- This function is responsible for updating the item in the tasklist,
                                              clearAll   :- This function is responsible for deleting all the tasks from tasklist.
                                              
 2. add-item component 
