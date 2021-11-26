@@ -23,21 +23,21 @@ Data is stored in the local storage in the form of 'ItemList' : [{desc : string 
                                              
 2. add-item component 
 
-  a) add-item.component.html contains the form that takes description and target date as an input.
+    a) add-item.component.html contains the form that takes description and target date as an input.
   
-  b) add-item.component.ts contains method saveItem :- This function adds the new task in the local Storage.
+    b) add-item.component.ts contains method saveItem :- This function adds the new task in the local Storage.
   
 3. update-item component
 
-  a) update-item.component.html contains the form that takes description and target date as an input, and used ngModel for two way data binding.
+    a) update-item.component.html contains the form that takes description and target date as an input, and used ngModel for two way data binding.
   
-  b) update-item.component.ts contains method saveItem :- This function modifies the task and stores it in the local Storage.
+    b) update-item.component.ts contains method saveItem :- This function modifies the task and stores it in the local Storage.
   
 4. sidebar component
 
-  a) sidebar.component.html is used to display the 3 upcoming tasks on the right side of the screen.
+    a) sidebar.component.html is used to display the 3 upcoming tasks on the right side of the screen.
   
-  b) sidebar.component.ts contains method fetchData :- This function sorts the tasks based on the target date and then displays the 3 upcoming tasks along with 
+    b) sidebar.component.ts contains method fetchData :- This function sorts the tasks based on the target date and then displays the 3 upcoming tasks along with 
      the description and the target date. 
 
                                              
